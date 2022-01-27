@@ -1,0 +1,117 @@
+:root {
+  --mainBackground: #a7d7c5;
+  --formBackground: #f6fbf9;
+  --mainTextColor: #212b27;
+  --karla: "Karla", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--karla);
+  overflow: hidden;
+}
+.login-provider {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--mainBackground);
+}
+.login-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 84vh;
+  background: var(--formBackground);
+  border-radius: 49.0901px;
+}
+.login-info {
+  margin-top: 60px;
+  text-align: center;
+}
+.login-info h1 {
+  font-size: 45px;
+  line-height: 72px;
+  color: var(--mainTextColor);
+}
+
+.login-info p {
+  margin-top: 6.14px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #32403b;
+}
+
+.form-group {
+  position: relative;
+  width: calc(100% - 120px);
+  margin: auto;
+}
+.form-group input {
+  width: 100%;
+  margin: 8px 0;
+  height: 56px;
+  font-family: var(--karla);
+  text-indent: 50px;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1.53407px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15.3407px;
+}
+input::placeholder {
+  text-indent: 50px;
+  font-size: 16px;
+}
+input:focus {
+  outline: none;
+}
+.form-group span {
+  position: absolute;
+  top: 50%;
+  left: 7%;
+  transform: translateY(-50%);
+}
+.send-btn {
+  margin-top: 32px;
+  text-align: center;
+}
+.send-btn button {
+  width: 320px;
+  height: 60px;
+  background: #84c7ae;
+  border-radius: 23.011px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 23px;
+  font-family: var(--karla);
+}
+
+.send-btn p {
+    margin-top: 16px;
+    color: #32403B;
+}
+.send-btn p a {
+    color: #32403B; 
+    text-decoration: none;
+    border-bottom: 1px solid #32403B;
+
+}
+.img-figures-first {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.img-figures-second {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

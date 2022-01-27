@@ -1,0 +1,120 @@
+:root {
+  --logo-color: #f087b1;
+  --header--text-color: #56597a;
+  --card--background: #fff1f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url("/fonts/Proxima\ Nova\ Font.otf");
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: calc(100% - 206px);
+  margin: 57px auto;
+}
+.navbar-brand h1 {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--header--text-color);
+}
+.navbar-brand h1 span {
+  color: var(--logo-color);
+}
+ul {
+  display: flex;
+  position: absolute;
+  right: 0;
+}
+ul li {
+  margin: 0 35px;
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #aaaaab;
+  font-size: 20px;
+}
+ul li:first-child a {
+  color: var(--header--text-color);
+}
+
+#part-one {
+  width: calc(100% - 270px);
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#part-one .card {
+  width: 23%;
+  height: 307px;
+  background: var(--card--background);
+  border-radius: 8px;
+  transition: all .5s;
+}
+#part-one .card:hover {
+    background: #F78CB6;
+    height: 350px;
+}
+#part-one .card:hover .card-info h1,
+#part-one .card:hover .card-info p
+ {
+    color: white;
+}
+#part-one .card .card-image {
+  margin: 56px 0;
+  text-align: center;
+}
+#part-one .card:hover .card-image img {
+    /* filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
+    filter: brightness(0) invert(1);
+}
+#part-one .card:nth-child(3) .card-image img {
+   /* filter: invert(48%) sepia(13%) saturate(3207%) hue-rotate(130deg) brightness(95%) contrast(80%); */
+   /* .saturate { filter: saturate(3); } */
+   /* .grayscale { filter: grayscale(100%); } */
+   /* .contrast { filter: contrast(160%); } */
+   /* .brightness { filter: brightness(0.25); } */
+   /* .blur { filter: blur(3px); } */
+   filter: invert(100%); 
+   /* .sepia { filter: sepia(100%); } */
+   /* .huerotate { filter: hue-rotate(180deg); } */
+   /* .rss.opacity { filter: opacity(50%); } */
+}
+#part-one .card .card-info {
+  text-align: center;
+  margin: 42px 0;
+}
+.card .card-info h1 {
+  font-size: 34px;
+  color: var(--header--text-color);
+}
+.card .card-info p {
+    margin: 10px 0;
+  font-family: ProximaNova;
+  line-height: 24px;
+  color: #919299;
+}
+
+.card-footer {
+  display: none;
+  text-align: center;
+  color: white;
+}
+.card:hover .card-footer {
+  display: block;
+}
